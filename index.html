@@ -1,81 +1,233 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>测试论文展示</title>
+    <title>AMKG: Adaptive Multimodal Knowledge Graph Integration for Object-Goal Navigation in Open-World Embodied Systems</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #282c34;
-            color: white;
             text-align: center;
-            padding: 20px;
-        }
-        section {
             margin: 20px;
+            background-color: #f8f9fa;
         }
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .authors {
+            font-size: 16px;
+            color: #007bff;
+        }
+        .affiliations {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* 第一部分视频（居中适中大小） */
+        .video-container {
+            margin: 20px auto;
+            width: 60%;
+            max-width: 800px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Highlights 部分 */
+        .highlights-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        /* 小标题样式 */
         h2 {
-            color: #5b5b5b;
+            font-size: 24px;
+            margin-top: 20px;
         }
-        p {
-            line-height: 1.6;
+
+        /* 4列2排视频网格 */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            justify-content: center;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .video-grid video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 横向大图片 */
+        .image-container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+		
+		        /* 3列1排图片布局 */
+        .three-column-images {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            justify-content: center;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .three-column-images img {
+            width: 100%;
+            height: 250px; /* 统一高度，确保图片一致 */
+            object-fit: cover; /* 保持图片比例，不会变形 */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Citation 部分 */
+        .citation-section {
+            width: 80%;
+            margin: 30px auto;
+            text-align: left;
+        }
+        .citation-box {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: monospace;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        /* Acknowledgement 部分 */
+        .acknowledgement-section {
+            width: 80%;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .acknowledgement-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .acknowledgement-section p {
+            font-size: 16px;
             color: #333;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #282c34;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+
+
+
     </style>
 </head>
 <body>
-    <header>
-		<h1>AMKG:Adaptive Multimodal Knowledge Graph Integration for Object-Goal Navigation in Open-World Embodied Systems</h1>
-        <!-- 使用你的图片作为标题 -->
-        <img src="img/001.png" alt="AMKG:Adaptive Multimodal Knowledge Graph Integration for Object-Goal Navigation in Open-World Embodied Systems">
-    </header>
 
-    <section>
-        <h2>abstract</h2>
-        <p>The \textbf{Embodied Multi-modal Retrieval-Augmented Generation (EMG)} framework addresses the challenges of multi-modal information indexing within adaptive knowledge graphs. EMG improves navigation, retrieval, and decision-making in embodied intelligent robots operating in dynamic environments by continuously updating a multi-modal knowledge graph through feedback from a Vision-Language Model (VLM). EMG creates unified feature representations that enable real-time adaptive responses and support multi-modal reasoning by integrating visual encoders, language models, and graph networks. Experimental results show that EMG significantly outperforms current state-of-the-art models in embodied tasks, demonstrating strong performance in real-world and simulated environments. EMG achieves over 93\% Rank 1 accuracy in cross-modal retrieval tasks on the ARKitScenes and MultiScan datasets. EMG exhibits robust performance in WiFi-based indoor positioning, achieving high precision in multi-floor localization tasks, highlighting its effectiveness in complex spatial contexts. Furthermore, deploying EMG on embedded platforms like the Jetson AGX Orin showcases its efficiency and suitability for real-time reasoning, emphasizing its potential for practical applications in embodied intelligent systems.</p>
-    </section>
+    <h1>AMKG: Adaptive Multimodal Knowledge Graph Integration for Object-Goal Navigation in Open-World Embodied Systems</h1>
+    <p class="authors">
+        Mingyi Li, Jiaying Li, Hongxiao Wu, Jiawei Li <br>
+    </p>
+    <p class="affiliations">
+        待修改 <br>
+        *Equal Contribution, ordered alphabetically | †Equal Advising
+    </p>
 
-    <section>
-        <h2>论文内容</h2>
-        <p>本论文展示了如何通过网页来表达和展示研究成果，强调了网页技术（如 HTML、CSS）的使用，以及如何将相关素材（如图片、视频、PDF）嵌入到页面中。</p>
-        
-        <!-- 插入图片 -->
-        <h3>论文相关图像</h3>
-        <img src="your-image.jpg" alt="论文相关图像">
-
-        <!-- 插入视频 -->
-        <h3>论文相关视频</h3>
-        <video width="640" height="360" controls>
+    <!-- 第一个视频 -->
+    <div class="video-container">
+        <video controls>
             <source src="mp4/01.mp4" type="video/mp4">
-            你的浏览器不支持视频播放。
+            <source src="video.webm" type="video/webm">
+            您的浏览器不支持视频标签，请使用现代浏览器查看视频。
         </video>
+    </div>
 
-        <!-- 插入PDF文件 -->
-        <h3>论文PDF</h3>
-        <iframe src="your-paper.pdf" width="100%" height="600px"></iframe>
-    </section>
+    <!-- Highlights 部分 -->
+    <div class="highlights-section">
+        <h2>Highlights</h2>
+        <p>
+            The <strong>Adaptive Multimodal Knowledge Graph Vision-Language Model (AMKG-VLM)</strong> is designed to tackle the complexities of robotic navigation in dynamic environments. 
+            By integrating the <strong>Adaptive Multimodal Knowledge Graph (AMKG)</strong> with the <strong>Mobile Vision-Language Model (MobileVLMv2)</strong>, 
+            it enhances perception, understanding, and decision-making in unfamiliar settings. 
+            This enables comprehensive <strong>end-to-end intelligent robotic functionality</strong>.
+        </p>
+    </div>
 
-    <footer>
-        <p>测试论文展示页面 | <a href="https://github.com/yourusername/your-repository" target="_blank" style="color:white;">GitHub 仓库</a></p>
-    </footer>
+    <!-- 小标题 + 单个视频 -->
+    <h2>Real-world Results: Unitree Go2</h2>
+    <div class="video-container">
+        <video controls>
+            <source src="mp4/02.mp4" type="video/mp4">
+            <source src="model_demo.webm" type="video/webm">
+            您的浏览器不支持视频标签，请使用现代浏览器查看视频。
+        </video>
+    </div>
+
+    <!-- 4列2排视频网格 -->
+    <h2>More Results</h2>
+    <div class="video-grid">
+        <video controls><source src="mp4/03-1.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-2.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-3.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-4.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-5.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-6.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-7.mp4" type="video/mp4"></video>
+        <video controls><source src="mp4/03-8.mp4" type="video/mp4"></video>
+    </div>
+
+    <!-- 小标题 -->
+    <h2>Visualization待修改</h2>
+
+    <!-- 横向大图片 -->
+    <div class="image-container">
+        <img src="img/001.png" alt="Visualization Image">
+    </div>
+	
+	    <!-- 3列1排图片展示 -->
+    <h2>Additional Visualizations待修改</h2>
+    <div class="three-column-images">
+        <img src="img/002.jpg" alt="Image 1">
+        <img src="img/003.jpg" alt="Image 2">
+        <img src="img/004.jpg" alt="Image 3">
+    </div>
+
+    <!-- Citation -->
+    <div class="citation-section">
+        <h2>Citation</h2>
+        <div class="citation-box">
+            <pre>
+			待修改
+@article{your2024paper,
+    title = {Your Paper Title},
+    author = {Author1, Author2, Author3, etc.},
+    journal = {Conference or Journal Name},
+    year = {2024},
+}
+            </pre>
+        </div>
+    </div>
+
+    <!-- Acknowledgement -->
+    <div class="acknowledgement-section">
+        <h2>Acknowledgement</h2>
+        <p>待修改
+		We sincerely thank [Person 1] for [Contribution]. We also thank [Person 2] and [Person 3] for their help with [Task], as well as [Person 4] and [Person 5] for their valuable discussions.</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
 </body>
 </html>
